@@ -1,0 +1,14 @@
+.side-header {
+  max-width: 400px;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  border-right: solid 1px #000;
+}
+.side-header .menu {
+  list-style: none;
+}
+.menu li {
+  padding: 20px 20px;
+  border-bottom: solid 1px #ccc;
+}

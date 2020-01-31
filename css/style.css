@@ -1,14 +1,35 @@
+body {
+  font-family: Raleway, Arial, sans-serif;
+}
 .side-header {
-  max-width: 400px;
-  padding: 20px;
+  max-width: 300px;
+  padding: 0;
   position: fixed;
   left: 0;
-  border-right: solid 1px #000;
+  border-right: solid 1px #eaeaea;
 }
 .side-header .menu {
   list-style: none;
 }
+.logo-holder {
+  padding: 31px 60px;
+}
+.logo-holder a {
+  display: block;
+}
+ul.menu {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
 .menu li {
   padding: 20px 20px;
   border-bottom: solid 1px #ccc;
+}
+.menu li a {
+  display: block;
+  padding: 20px;
+}
+.menu li.strong {
+  //
 }

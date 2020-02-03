@@ -11,6 +11,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v4.7.0/css/font-awesome-css.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
   </head>
@@ -159,12 +160,13 @@
 
   <div class="main-body">
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse2" aria-controls="navbarCollapse2" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="collapse navbar-collapse" id="navbarCollapse2">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -178,17 +180,83 @@
         </ul>
         <form class="form-inline mt-2 mt-md-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="custom-hover-bg btn btn-outline-success my-2 my-sm-0 text-white border-white" type="submit">Search</button>
         </form>
       </div>
     </nav>
+    <!-- /NAV -->
+
+    <!-- BREADCRUMB w IMG -->
+    <header id="page-title">
+      <div class="container">
+        <h1><strong >Membership Login</strong></h1>
+        <ul class="breadcrumb">
+          <li ><a href="/">Home</a></li>
+          <li class="active">Login</li>
+        </ul>
+      </div>
+    </header>
+    <!-- /BREADCRUMB w IMG -->
 
     <main role="main" class="container">
-        <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser's viewport.</p>
-        <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs »</a>
-        </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center text-bold" style="margin-bottom: 10px;">IAHSP Membership Login</h2>
+          <p class="lead">
+            The International Association of Home Staging Professionals® (IAHSP®) is the original industry association that since 1999 has set the standards of excellence and ethics. We believe education is paramount to the integrity of our association and since its inception, IAHSP® has always required that members have training in the Home Staging industry. This differentiating factor is important so that all members have a benchmark of education and training relative to Home Staging.
+          </p>
+        </div> <!-- /col-12 -->
+      </div> <!-- /row -->
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Sign <strong>In</strong></h2>
+          <div  class="white-row">
+            <div >
+              <p >To access the private IAHSP pages for members, please click "IAHSP Member Login."</p>
+              <p >If you are an IAHSP Chapter President, please click on "IAHSP President Login" to manage your IAHSP Chapter pages.</p>
+            </div>
+            <div >
+              <form  class="form-signin ng-pristine ng-invalid ng-touched" novalidate="">
+                <h2  class="form-signin-heading">Please sign in</h2>
+                <div  class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i aria-hidden="true" class="fa fa-user"></i></span>
+                  </div>
+                  <input  autofocus="" class="form-control ng-pristine ng-invalid ng-touched" formcontrolname="email" name="email" placeholder="Email address" required="" type="email">
+                </div><!-- /input-group -->
+                <div  class="input-group" style="padding-top: 2px;">
+                  <div class="input-group-prepend">
+                    <span  class="input-group-text"><i  aria-hidden="true" class="fa fa-lock"></i></span>
+                  </div>
+                  <input  class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="password" name="password" placeholder="Password" required="" type="password">
+                </div><!-- /input-group -->
+                <a  routerlink="/forgot" href="/forgot">Forgot your password?</a>
+                <button  class="btn btn-lg btn-primary btn-block" style="margin-top: 10px;" type="submit" disabled="">Sign in</button>
+              </form>
+            </div>
+            <div  class="space-top-20">
+              <div >
+                <a  class="btn-google-plus fullwidth radius3" href="https://pages.iahsp.com/contact/"><i  class="fa fa-ambulance" aria-hidden="true"></i> Need help? Contact us!</a>
+              </div>
+              <div > </div>
+              <div  class="space-top-20">
+                <a  class="btn-twitter fullwidth radius3" href="https://admin.iahsp.com/checkuser.php" target="_blank"><i  aria-hidden="true" class="fa fa-external-link-square"></i> IAHSP President Login</a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /col-md-6 -->
+        <div class="col-md-6">
+          <h2>New Membership <strong >Registration</strong></h2>
+          <div  class="white-row">
+            <p>All approved training courses and designations are eligible to apply for IAHSP membership. To get started, please click the following link below.</p>
+            <a class="btn-facebook fullwidth radius3" routerlink="/register" href="/register"><i aria-hidden="true" class="fa fa-check"></i> Register Today!</a>
+            <a  class="btn-twitter fullwidth radius3" href="https://pages.iahsp.com/contact/"><i  aria-hidden="true" class="fa fa-info"></i> Contact Us</a>
+          </div>
+          </div> <!-- /col-md-6 -->
+      </div>
+
+
         asdf<br/>
         asdf<br/>
         asdf<br/>
@@ -251,6 +319,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="https://use.fontawesome.com/4536a6e30f.js"></script>
   <script src="/js/stickymenu.js"></script>
   
 

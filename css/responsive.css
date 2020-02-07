@@ -1,0 +1,12 @@
+@media handheld, only screen and (max-width: 767px) {
+  .side-header {
+    position: relative;
+    max-width: unset;
+  }
+  .main-body {
+    width: unset;
+    position: unset;
+    right: unset;
+    top: unset;
+  }
+}

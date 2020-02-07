@@ -21,7 +21,7 @@ a, a:focus, a:hover, a:active {
   cursor: pointer;
 }
 a, .styleSecondColor, .list-icon.color li:before, .item-box-desc small, p.dropcap:first-letter, ul.pagination a, ul.pagination a:hover, ul.pagination li.active .fa, ul.star-rated.styleSecondColor li i, .tp-catpion a, .divider.styleColor .fa {
-    color: #eaa824;
+    color: #bba15b;
 }
 
 .side-header {
@@ -38,6 +38,24 @@ a, .styleSecondColor, .list-icon.color li:before, .item-box-desc small, p.dropca
 }
 .side-header .menu {
   list-style: none;
+  font-size: 14px;
+}
+.side-header .navbar-nav .dropdown-menu {
+  position: unset;
+  background: #ececec;
+  font-size: inherit;
+  border-left: solid 8px #bba15b;
+  border-radius: 0;
+}
+.side-header .navbar-nav .dropdown-item {
+  padding-left: 70px;
+}
+.dropdown-toggle::after {
+  position: absolute;
+  right: 10px;
+}
+.dropdown-divider {
+  border-color: #ccc;
 }
 .logo-holder {
   padding: 31px 60px;
@@ -63,10 +81,11 @@ ul.menu {
   font-size: 15px;
 }
 .side-header .menu li a.nav-link {
-  display: block;
+  display: flex;
   padding: 0 60px;
   min-height: 40px;
   justify-content: flex-start;
+  align-items: center;
   color: #000;
 }
 .side-header .menu li a.nav-link:hover,
@@ -87,7 +106,7 @@ ul.menu {
 }
 .main-body .navbar {
   color: #fff;
-  background-color: #eaa824;
+  background-color: #bba15b;
   font-size: 14px;
 }
 .radius3 {

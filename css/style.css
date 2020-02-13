@@ -57,6 +57,12 @@ a, .styleSecondColor, .list-icon.color li:before, .item-box-desc small, p.dropca
 .dropdown-divider {
   border-color: #ccc;
 }
+.dropdown-menu.extra-wide a.shbutton {
+  width: 250px;
+}
+nav.nav2 .dropdown-menu {
+  padding: 5px 10px;
+}
 .logo-holder {
   padding: 31px 60px;
   margin-right: 0;

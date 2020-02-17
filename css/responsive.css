@@ -2,12 +2,34 @@
   .side-header {
     position: relative;
     max-width: unset;
+    display: table;
+    width: 100%;
+  }
+  .side-header .logo-holder {
+    display: table-footer-group;
+  }
+  .side-header .logo-holder img {
+    margin: 0 auto;
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    margin-bottom: 40px;
   }
   .main-body {
     width: unset;
     position: unset;
     right: unset;
     top: unset;
+  }
+  .main-body .navbar .navbar-nav {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .main-body .navbar .navbar-nav .nav-item {
+    flex: 0 0 50%;
+    text-align: center;
   }
   footer ul li {
     display: block;
